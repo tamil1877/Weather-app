@@ -1,0 +1,126 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(252, 252, 16, 0.8);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Container */
+.container {
+    width: 400px;
+    min-height: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Input and Search */
+.input-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: 2px solid rgb(140, 140, 243);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    flex: 1;
+    height: 35px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    padding: 0 15px;
+}
+
+.searchIcon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: white;
+}
+
+.searchIcon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Weather Display */
+.search-cont {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.search-cont img {
+    width: 160px;
+    height: 160px;
+}
+
+.temp-cont,
+.city-cont,
+.country-cont {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+/* Coordinates and Info */
+.coord {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.lat,
+.long {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Additional Info: Humidity & Wind */
+.info-cont {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.humidity,
+.wind {
+    margin: 8px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 500px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+}
